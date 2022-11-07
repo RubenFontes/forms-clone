@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img{
+    width: 280px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -8%);
+}
+
+div, input{
+    background-color: #F8F9FA;
+
+}
+.code{
+    margin: 25vh auto 5vh auto;
+    padding: 20px;
+    border: none;
+    color: black !important;
+    width: 40vw;
+    overflow: hidden;
+}
+#code::placeholder{
+    color: black !important;
+    border-bottom: 1px dashed black;
+}
+
+input{
+    display: flex;
+    border: none;
+    width: 50vw;
+    font-size: 16px;
+    color: #00457c;
+}
+.code input{
+    width: 38vw;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+input:not(.code input){
+    border-bottom: 1px solid rgb(0, 69, 124, 0.4);
+}
+
+input::placeholder{
+    color: #00457c;
+}
+
+label{
+    color: silver;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+input:focus{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+div{
+    margin: 20px 0;
+}
+
+.data{
+    padding: 20px;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+}
+
+.group div input{
+    width: 15.6vw;
+    margin-right: 20px;
+}
+
+@media(max-width: 768px){
+
+    img{
+        width: 280px;
+        top: 2%;
+    }
+
+    .code{
+        margin: 15vh auto 5vh auto;
+        width: 90vw;
+    }
+    .code input{
+        width: 85vw;
+        padding-right: 20px;
+        overflow: hidden;
+    }
+    input{
+        width: 80vw;
+    }
+    .data{
+        padding: 1px 20px;
+        width: 90vw;
+    }
+    .group{
+        display: flex;
+        flex-direction: column;
+    }
+    .group div input{
+        width: 80vw;
+    }
+}
